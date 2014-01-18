@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDash", "MDash\MDash.csproj", "{02DF44BC-13BA-4504-BE20-30A788FB2164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDash.Tests", "MDash.Tests\MDash.Tests.csproj", "{9859B0FB-6777-4704-A73A-F83733408589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDash.Plex", "MDash.Plex\MDash.Plex.csproj", "{A4D49CBB-5306-4EF1-9629-22A27C2FC7E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDash.Data", "MDash.Data\MDash.Data.csproj", "{1B7F99CA-331B-4D8D-A50B-9E9AB7F20552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDash.Data.Models", "MDash.Data.Models\MDash.Data.Models.csproj", "{11299E66-957D-4D6E-8386-5E256DFDDB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDash.Data.Contracts", "MDash.Data.Contracts\MDash.Data.Contracts.csproj", "{7BFDA7A9-E75A-489A-BB2F-CB447962EEE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02DF44BC-13BA-4504-BE20-30A788FB2164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02DF44BC-13BA-4504-BE20-30A788FB2164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02DF44BC-13BA-4504-BE20-30A788FB2164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02DF44BC-13BA-4504-BE20-30A788FB2164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9859B0FB-6777-4704-A73A-F83733408589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9859B0FB-6777-4704-A73A-F83733408589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9859B0FB-6777-4704-A73A-F83733408589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9859B0FB-6777-4704-A73A-F83733408589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D49CBB-5306-4EF1-9629-22A27C2FC7E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D49CBB-5306-4EF1-9629-22A27C2FC7E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D49CBB-5306-4EF1-9629-22A27C2FC7E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D49CBB-5306-4EF1-9629-22A27C2FC7E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B7F99CA-331B-4D8D-A50B-9E9AB7F20552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B7F99CA-331B-4D8D-A50B-9E9AB7F20552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B7F99CA-331B-4D8D-A50B-9E9AB7F20552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B7F99CA-331B-4D8D-A50B-9E9AB7F20552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11299E66-957D-4D6E-8386-5E256DFDDB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11299E66-957D-4D6E-8386-5E256DFDDB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11299E66-957D-4D6E-8386-5E256DFDDB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11299E66-957D-4D6E-8386-5E256DFDDB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BFDA7A9-E75A-489A-BB2F-CB447962EEE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BFDA7A9-E75A-489A-BB2F-CB447962EEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BFDA7A9-E75A-489A-BB2F-CB447962EEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BFDA7A9-E75A-489A-BB2F-CB447962EEE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
