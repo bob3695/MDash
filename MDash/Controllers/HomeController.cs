@@ -1,5 +1,6 @@
 ﻿using MDash.Data;
 using MDash.Data.Models;
+using MDash.Plex;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,14 +13,9 @@ namespace MDash.Controllers
     {
         public ActionResult Index()
         {
-            UnitOfWork uow = new UnitOfWork();
+            PlexAPI api = new PlexAPI();
 
-            PlexServer plexServer = new PlexServer();
-            plexServer.Ip = "1291313";
-            uow.PlexServerRepository.Insert(plexServer);
-            uow.Save();
-
-            var servers = uow.PlexServerRepository.Get();
+            api.GetNowPlaying("192.168.30.202", "32400");
 
             return View();
         }

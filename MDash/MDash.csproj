@@ -184,6 +184,14 @@
       <Project>{1b7f99ca-331b-4d8d-a50b-9e9ab7f20552}</Project>
       <Name>MDash.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MDash.Plex.Contracts\MDash.Plex.Contracts.csproj">
+      <Project>{90d36671-0106-4f86-8e10-59fd0a381efa}</Project>
+      <Name>MDash.Plex.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MDash.Plex\MDash.Plex.csproj">
+      <Project>{a4d49cbb-5306-4ef1-9629-22a27c2fc7e4}</Project>
+      <Name>MDash.Plex</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

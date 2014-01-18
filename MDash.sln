@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDash.Data.Models", "MDash.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDash.Data.Contracts", "MDash.Data.Contracts\MDash.Data.Contracts.csproj", "{7BFDA7A9-E75A-489A-BB2F-CB447962EEE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDash.Plex.Contracts", "MDash.Plex.Contracts\MDash.Plex.Contracts.csproj", "{90D36671-0106-4F86-8E10-59FD0A381EFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{7BFDA7A9-E75A-489A-BB2F-CB447962EEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BFDA7A9-E75A-489A-BB2F-CB447962EEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BFDA7A9-E75A-489A-BB2F-CB447962EEE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90D36671-0106-4F86-8E10-59FD0A381EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D36671-0106-4F86-8E10-59FD0A381EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D36671-0106-4F86-8E10-59FD0A381EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D36671-0106-4F86-8E10-59FD0A381EFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

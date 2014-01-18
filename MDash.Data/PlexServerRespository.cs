@@ -45,5 +45,10 @@ namespace MDash.Data
         }
 
         #endregion Get All Methods
+
+        public void Dispose()
+        {
+            
+        }
     }
 }
