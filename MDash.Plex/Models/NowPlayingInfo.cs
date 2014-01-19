@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MDash.Plex.Contracts
+namespace MDash.Plex.Models
 {
-    public class MediaContainer
+    public class NowPlayingInfo
     {
         public List<Video> Videos { get; set; }
     }

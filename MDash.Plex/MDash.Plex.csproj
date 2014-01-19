@@ -42,17 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\NowPlayingInfo.cs" />
     <Compile Include="PlexAPI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MDash.Plex.Contracts\MDash.Plex.Contracts.csproj">
-      <Project>{90d36671-0106-4f86-8e10-59fd0a381efa}</Project>
-      <Name>MDash.Plex.Contracts</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
