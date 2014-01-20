@@ -13,9 +13,10 @@ namespace MDash.Controllers
     {
         public ActionResult Index()
         {
-            PlexAPI api = new PlexAPI();
+            PlexAPI api = new PlexAPI("192.168.30.202", "32400");
 
-            api.GetNowPlaying("192.168.30.202", "32400");
+            api.GetClients();
+            api.GetNowPlaying();
 
             return View();
         }

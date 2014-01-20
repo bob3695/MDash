@@ -8,10 +8,10 @@ namespace MDash.Plex.Models
 {
     public class NowPlayingInfo
     {
-        public List<Video> Videos { get; set; }
+        public List<PlexVideo> Videos { get; set; }
     }
 
-    public class Video
+    public class PlexVideo
     {
         #region Attributes
 
