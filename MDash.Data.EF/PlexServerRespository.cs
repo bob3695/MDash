@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MDash.Data
+namespace MDash.Data.EF
 {
     public class PlexServerRespository : IPlexServerRepository, IDisposable
     {

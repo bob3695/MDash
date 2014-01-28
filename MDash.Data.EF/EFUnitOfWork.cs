@@ -1,9 +1,9 @@
 ﻿using MDash.Data.Contracts;
 using System;
 
-namespace MDash.Data
+namespace MDash.Data.EF
 {
-    public class UnitOfWork : IUnitOfWork, IDisposable
+    public class EFUnitOfWork : IUnitOfWork, IDisposable
     {
         #region Private Variables
 
@@ -30,7 +30,7 @@ namespace MDash.Data
 
         #region Contstructor
 
-        public UnitOfWork()
+        public EFUnitOfWork()
         {
             context = new MDashContext();
         }

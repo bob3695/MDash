@@ -48,7 +48,7 @@ namespace MDash.Plex
         public NowPlayingInfo GetNowPlaying()
         {
             var client = GetRestClient();
-            var request = GetRestRequest("status/sessions");          
+            var request = GetRestRequest("status/sessions");
             var response = client.Execute<NowPlayingInfo>(request);
             
             return response.Data;
@@ -58,8 +58,7 @@ namespace MDash.Plex
         {
             var client = new RestClient();
             client.ClearHandlers();
-            client.AddHandler("application/xml", new PlexXmlDeserializer());
-            client.AddHandler("text/xml", new PlexXmlDeserializer());
+            client.AddHandler("*", new PlexXmlDeserializer());
 
             return client;
         }

@@ -15,7 +15,7 @@ using RestSharp;
 
 namespace MDash.Plex
 {
-    public class PlexXmlDeserializer : XmlDeserializer
+    public class PlexXmlDeserializer : IDeserializer
     {
         public string RootElement { get; set; }
         public string Namespace { get; set; }

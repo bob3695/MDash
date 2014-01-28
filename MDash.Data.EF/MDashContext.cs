@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MDash.Data
+namespace MDash.Data.EF
 {
     public class MDashContext : DbContext
     {

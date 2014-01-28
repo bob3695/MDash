@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1B7F99CA-331B-4D8D-A50B-9E9AB7F20552}</ProjectGuid>
+    <ProjectGuid>{B6DA1538-BE0F-4B9B-9359-96A6E626F202}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MDash.Data</RootNamespace>
-    <AssemblyName>MDash.Data</AssemblyName>
+    <RootNamespace>MDash.Web</RootNamespace>
+    <AssemblyName>MDash.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,14 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,24 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MDashContext.cs" />
-    <Compile Include="PlexServerRespository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MDash.Data.Contracts\MDash.Data.Contracts.csproj">
-      <Project>{7bfda7a9-e75a-489a-bb2f-cb447962eee4}</Project>
-      <Name>MDash.Data.Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MDash.Data.Models\MDash.Data.Models.csproj">
-      <Project>{11299e66-957d-4d6e-8386-5e256dfddb7a}</Project>
-      <Name>MDash.Data.Models</Name>
-    </ProjectReference>
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

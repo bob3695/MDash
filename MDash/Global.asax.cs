@@ -18,6 +18,8 @@ namespace MDash
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            InjectorConfig.RegisterInjector();
         }
     }
 }
