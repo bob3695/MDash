@@ -20,6 +20,7 @@ namespace MDash
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             InjectorConfig.RegisterInjector();
+            MapperConfig.RegisterMapper();
         }
     }
 }
