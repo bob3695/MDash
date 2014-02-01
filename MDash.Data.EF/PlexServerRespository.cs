@@ -39,7 +39,7 @@ namespace MDash.Data.EF
 
         #region Get All Methods
 
-        public IList<PlexServer> GetAll()
+        public IEnumerable<PlexServer> GetAll()
         {
             return this.context.PlexServers.ToList();
         }

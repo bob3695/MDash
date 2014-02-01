@@ -9,6 +9,6 @@ namespace MDash.Data.Contracts
 
         PlexServer Get(string ip);
 
-        IList<PlexServer> GetAll();
+        IEnumerable<PlexServer> GetAll();
     }
 }
