@@ -34,9 +34,24 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
+    
+    @Html.Partial("_NowPlayingTray")
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    
+    <script type="text/javascript">
+        $(function () {
+            console.log('here');
+            $('#nowPlayingSection li a').click(function () {
+                console.log('here');
+                console.log(this);
+                console.log($(this).attr("data-thumb"));
+
+                $('#nowPlayingImage').attr('src', "http://192.168.30.202:32400" + $(this).attr('data-thumb'));
+            });
+        });
+    </script>
 </body>
 </html>
