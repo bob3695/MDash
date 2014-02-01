@@ -1,9 +1,5 @@
 ﻿@model MDash.Plex.Models.ClientInfo
 
-<div style="position:relative;">
-    <img id="nowPlayingImage" style="width: 30px;height:50px;" />
-</div>
-
 <div class="navbar navbar-inverse navbar-fixed-bottom">
     <div class="container">
         <div class="navbar-header">
@@ -14,12 +10,20 @@
             </button>
         </div>
         <div class="navbar-collapse collapse">
-            <ul id="nowPlayingSection" class="nav navbar-nav">
-                @foreach (var client in Model.Clients)
-                {
-                    <li><a href="#" data-thumb="@(client.NowPlaying != null ? client.NowPlaying.Thumb : string.Empty)">@client.Name</a></li>
-                }
-            </ul>
+            <div class="nowplaying-image">
+                <img id="nowPlayingImage" />
+            </div>
+            <div class="nowplaying-clientlist">
+                <ul id="nowPlayingSection" class="nav navbar-nav">
+                    @foreach (var client in Model.Clients)
+                    {
+                        <li><a href="#" data-thumb="@(client.NowPlaying != null ? client.NowPlaying.Thumb : string.Empty)" data-name="@(client.NowPlaying != null ? client.NowPlaying.Title : string.Empty)">@client.Name</a></li>
+                    }
+                </ul>
+            </div>
+            <div class="nowplaying-info">
+                Currently Playing: <span id="nowPlayingTitle" />
+            </div>
         </div>
     </div>
 </div>

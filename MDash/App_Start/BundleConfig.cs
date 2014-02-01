@@ -23,6 +23,12 @@ namespace MDash
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            // Now Playing
+            bundles.Add(new ScriptBundle("~/bundles/nowplaying").Include(
+                "~/Scripts/NowPlaying/nowplaying.js"));
+            bundles.Add(new StyleBundle("~/Content/nowplaying").Include(
+                "~/Content/NowPlaying/nowplaying.css"));
         }
     }
 }

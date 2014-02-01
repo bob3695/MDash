@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/nowplaying")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -39,19 +40,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/nowplaying")
     @RenderSection("scripts", required: false)
-    
-    <script type="text/javascript">
-        $(function () {
-            console.log('here');
-            $('#nowPlayingSection li a').click(function () {
-                console.log('here');
-                console.log(this);
-                console.log($(this).attr("data-thumb"));
-
-                $('#nowPlayingImage').attr('src', "http://192.168.30.202:32400" + $(this).attr('data-thumb'));
-            });
-        });
-    </script>
 </body>
 </html>
