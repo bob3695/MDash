@@ -24,5 +24,10 @@ namespace MDash.API
 
             return npClients;
         }
+
+        public string Get(string id)
+        {
+            return string.Empty;
+        }
     }
 }
